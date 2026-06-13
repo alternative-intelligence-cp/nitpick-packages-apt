@@ -1,13 +1,13 @@
 #!/bin/bash
-# Build the aria compiler .deb package
-# Expects the aria repo to be checked out and CMake-ready
+# Build the nitpick compiler .deb package
+# Expects the nitpick repo to be checked out and CMake-ready
 set -e
 
-ARIA_DIR="${1:?Usage: build-compiler-deb.sh <aria-repo-dir>}"
+ARIA_DIR="${1:?Usage: build-compiler-deb.sh <nitpick-repo-dir>}"
 VERSION="${2:-0.2.15}"
 RELEASE="${3:-1}"
 
-echo "Building aria ${VERSION}-${RELEASE} .deb..."
+echo "Building nitpick ${VERSION}-${RELEASE} .deb..."
 
 cd "$ARIA_DIR"
 if [ -f debian/build-deb.sh ]; then

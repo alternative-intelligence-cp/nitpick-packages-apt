@@ -3,7 +3,7 @@
 # Uses reprepro for proper repo management
 set -e
 
-REPO_BASE="${REPO_BASE:-/var/lib/aria-apt}"
+REPO_BASE="${REPO_BASE:-/var/lib/nitpick-apt}"
 CONF_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../conf" && pwd)"
 DIST="${DIST:-noble}"
 
